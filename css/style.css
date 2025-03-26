@@ -1,6 +1,180 @@
+/* Reset default margin and padding for a consistent layout */
 body {
-  background-color: black;
-  color: white;
-  font-family: Arial, sans-serif;
+  font-family: calibri light; /* sets the default font style */
+  letter-spacing: 6px
+  margin: 8px;
+  padding: 50px;
+  text-align: center; /* Centers text globally */
+  background-color: #e4eaf4;                    
+}
+
+/* Header Styling */
+header {
+  color: black;
+  justify-content: space-between; /*pushes content to opposite sides */
+  align items: center; /* center header text */
+  padding: 10px;
+  background-color: #e4eaf4; /* white background */
+ }
+
+.header { 
+    position: fixed;
+    width: 100%;
+    display: flex; /* This enables a flexbox layout */
+    justify-content: space-between; /* This distributes the children (logo and donate button) to opposite ends */
+    align-items: center; /* This vertically aligns the items */
+    /* background: rgba(0, 0, 0, 0.85); */ /* Background removed */
+    padding: 10px 20px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+/* Logo styling */
+.logo {
+  max-width: 150px; /* restricts logo size */
+  height: auto;
+}
+/* Navigation Bar Styling */
+nav {
+  background-colour: cf3556; /* pinkish-red background for contrast */
+  padding: 10px;
+  font-weight: bolder
+}
+nav a {
+  color: #333333; /* sets text color */
+    text-decoration: none; /* removes underline from links */
+    margin: 6px; /*Adds spacing between links */
+  text-size: 10px;
+}
+/* change color on hover */
+nav a:hover {
+  background-color: #cbcb1b;
+  color: black;
+  text-decoration: underline;
+}
+
+/* Main Content Section Styling */
+.mainpage {
+  background-color: #e4eaf4;
+  color: black; /* ensures text is visible */
+  padding: 20px; /* optional: adds spacing inside */
+  word-spacing: 1px; /* adds 1px space between words */
+  letter-spacing: 0.5px; /* adds 0.5px space between letters */
+}
+.content {
+  letter-spacing: 3px;
+  background-color: white;  /* light red background */
+  padding: 20px; /* add space inside the main section */
+  border-radius: 10px; /* rounded corners */
+  text-align: center; /* center text */
+  width: 100%; /* full width */
+  max-width: 100%; /* ensure it doesn't exceed the  viewport */
+  margin: 0 auto; /* center horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* add a subtle shadow */
+}
+
+.content p {
+  color: white; /* white for paragraph text */
+  font-size: 15px; /* adjust font size */
+  line-height: 1.5; /* improve readability */
+  max-width: 50%; /* limit text width for better readability */
+  margin: 0 auto; /* center text */
+}
+
+
+.sections {
+  display: flex; /* enables side-by-side layout */
+  justify-content: space-around; /* spaces sections evenly */
   padding: 20px;
 }
+
+/* Individual Section Styling */
+.section{
+  width: 40%; /* sets equal width for both sections */
+  padding: 20px;
+  border: 1px white; /* adds a subtle border */
+  background-color: white; /* light background for readability */
+}
+/* footer styling */
+footer {
+  background-color: #cf3556; 
+  color: #ffffff; /* white text for contrast */
+  padding: 10px;
+  position: relative;
+  /* Footer Styling */
+  
+  
+  
+footer {
+    background-color: #2C3E50;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Each Column */
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 15px;
+}
+
+/* Column Headings */
+.footer-column h3 {
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* List Styles */
+.footer-column ol {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ol li {
+    margin: 5px 0;
+}
+
+.footer-column a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Partners Section */
+.footer-partners {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px yellow;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px yellow;
+    padding-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-column {
+        min-width: 100%;
+    }

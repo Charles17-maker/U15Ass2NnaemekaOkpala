@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper responsive behavior on mobile devices -->
-    <title>Homepage</title> <!-- Sets the title of the webpage -->
+    <title>About Us</title> <!-- Sets the title of the webpage -->
     <link href="css/style.css" rel="stylesheet"> <!-- Links the external CSS file -->
     <script src="scripts/javascript.js"></script> <!-- Links the external JS file -->
     
@@ -31,10 +31,8 @@
       <a href="index.html">HOMEPAGE</a>
       <a href="pages/aboutus.html">ABOUT US</a>
       <a href="pages/membership.html">MEMBERSHIP</a>
-      <a href="pages/courses.html">COURSES</a>
       <a href="pages/educationalgames.html">EDUCATIONAL GAMES</a>
       <a href="pages/datesandfees.html">DATES AND FEES</a>
-      <a href="pages/contactus.html">CONTACT US</a>
     </nav>
      <main class="aboutuspage">
       <p><strong>Who We Are</strong></p>

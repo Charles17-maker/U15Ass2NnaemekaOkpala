@@ -80,21 +80,35 @@ nav a:hover {
   max-width: 50%; /* limit text width for better readability */
   margin: 0 auto; /* center text */
 }
-
-
 .sections {
   display: flex; /* enables side-by-side layout */
-  justify-content: space-around; /* spaces sections evenly */
+  justify-content: space-between; /* spaces sections evenly */
   padding: 20px;
 }
 
 /* Individual Section Styling */
-.section{
-  width: 40%; /* sets equal width for both sections */
+.section {
+  width: 50%; /* sets equal width for both sections */
   padding: 20px;
-  border: 1px white; /* adds a subtle border */
+  border: 1px solid white; /* adds a subtle border */
   background-color: white; /* light background for readability */
+  border-radius: 15px; /* curved edges for the sections */
+  
+  /* Fade-in effect */
+  opacity: 0; /* initially hidden */
+  animation: fadeIn 2s forwards; /* apply the fadeIn animation */
 }
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* starts fully transparent */
+  }
+  100% {
+    opacity: 1; /* ends fully visible */
+  }
+}
+
 /* footer styling */
 footer {
   background-color: #cf3556; 

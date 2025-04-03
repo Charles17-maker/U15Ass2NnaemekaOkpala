@@ -109,78 +109,81 @@ nav a:hover {
   }
 }
 
-/* footer styling */
+ /* Footer Styling */
 footer {
-  background-color: #cf3556; 
+  background-color: #cf3556;
   color: #ffffff; /* white text for contrast */
   padding: 10px;
   position: relative;
 }
-  /* Footer Styling */
-  
-footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly between columns */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 /* Each Column */
 .footer-column {
-    flex: 1;
-    min-width: 250px;
-    margin: 15px;
+  flex: 1; /* Allows columns to take equal space */
+  min-width: 250px; /* Minimum width for each column */
+  margin: 15px; /* Space between the columns */
 }
 
 /* Column Headings */
 .footer-column h3 {
-    border-bottom: 2px solid #FFD700;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 /* List Styles */
 .footer-column ol {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-column ol li {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .footer-column a {
-    color: #FFD700;
-    text-decoration: none;
+  color: #FFD700;
+  text-decoration: none;
 }
 
 .footer-column a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Partners Section */
 .footer-partners {
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px yellow;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px yellow;
 }
 
 /* Bottom Footer */
 .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px yellow;
-    padding-top: 10px;
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px yellow;
+  padding-top: 10px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .footer-column {
-        min-width: 100%;
-    }
+  .footer-container {
+    flex-direction: column; /* Stack columns vertically on small screens */
+    text-align: center;
+  }
+
+  .footer-column {
+    min-width: 100%; /* Columns take full width on small screens */
+    margin: 10px 0; /* Space between stacked columns */
+  }
+}

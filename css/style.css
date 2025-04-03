@@ -115,18 +115,10 @@ footer {
   color: #ffffff; /* white text for contrast */
   padding: 10px;
   position: relative;
+}
   /* Footer Styling */
   
-  
-  
-footer {
-    background-color: #2C3E50;
-    color: #ffffff;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.footer-container {
+footer-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
